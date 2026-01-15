@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Cardo', 'Nunito', Georgia, serif;
+  background-color: #fff8dc;
+  color: #333;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/honey-comb.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.4;
+  z-index: -1;
+  pointer-events: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 56px;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
