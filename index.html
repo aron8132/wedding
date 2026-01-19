@@ -2,31 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coming Soon</title>
+  <title>Sári & Áron</title>
   <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      font-size: 5rem;
-      color: #333;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-  </style>
+      iframe {
+        border: 2px solid #333; /* Darker border for higher contrast */
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for better contrast */
+      }
+    </style>
 </head>
 <body>
-  <h1>
-    Coming Soon
-    <img src="images/bee-couple.png" alt="Bee icon" style="height: 10rem; vertical-align: middle; margin-left: px;">
-  </h1>
+  <header>
+    <h1>SÁRI & ÁRON</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Kezdőlap</a></li>
+        <li><a href="#story">Történetünk</a></li>
+        <li><a href="#schedule">Menetrend</a></li>
+        <li><a href="#travel">Közlekedés</a></li>
+        <li><a href="#wedding-party">Nászajándék</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero" id="home">
+    <div class="hero-img-slide">
+      <img src="images/hero.png" alt="Bee Illustration" />
+    </div>
+    <div class="hero-content-box">
+      <h2 class="big-date">2026. Szeptember 12.</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwVxnBcmEfusd8H3C6dlzgHoe-Dd77AZW5rnEzNibYiQIfmA/viewform?usp=dialog" class="rsvp-btn" target="_blank" rel="noopener" style="margin-bottom:18px;">Jelezz vissza</a>
+      <div style="font-size:0.9em;color:#555;margin-top:24px;display:flex;align-items:center;gap:6px;">
+        <img src="images/winking_bee.png" alt="Bee winking" style="height:1em;width:auto;vertical-align:middle;" />
+        Kérjük, legkésőbb június 30-ig jelezz vissza!
+        <img src="images/winking_bee.png" alt="Bee winking" style="height:1em;width:auto;vertical-align:middle;" />
+      </div>
+    </div>
+  </main>
+  <section id="story">
+    <h2 style="text-align:center;font-size:2em;">Történetünk</h2>
+    <p style="text-align: justify; line-height: 1.6; margin: 20px 0; font-size: 1.1em;">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </section>
+  <section id="schedule">
+    <h2 style="text-align:center;font-size:2em;">Menetrend</h2>
+    <div class="timeline">
+      <div class="timeline-event left">
+        <div class="event-content">
+          <div class="event-time">14:00</div>
+          <div class="event-name">Nászmise</div>
+          <!-- <img src="ceremony.jpg" alt="Ceremony" class="event-img"> -->
+        </div>
+        <div class="timeline-dot"><img src="images/icon.png" alt="Bee dot"></div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-dot"><img src="images/icon.png" alt="Bee dot"></div>
+        <div class="event-content">
+          <div class="event-time">15:00</div>
+          <div class="event-name">Fogadás</div>
+          <!-- <img src="reception.jpg" alt="Reception" class="event-img"> -->
+        </div>
+      </div>
+      <div class="timeline-event left">
+        <div class="event-content">
+          <div class="event-time">18:00</div>
+          <div class="event-name">Lakodalom</div>
+          <!-- <img src="dinner.jpg" alt="Dinner" class="event-img"> -->
+        </div>
+        <div class="timeline-dot"><img src="images/icon.png" alt="Bee dot"></div>
+      </div>
+      <div class="timeline-event right">
+        <div class="timeline-dot"><img src="images/icon.png" alt="Bee dot"></div>
+        <div class="event-content">
+          <div class="event-time">24:00</div>
+          <div class="event-name">Éjféli pizza</div>
+          <!-- <img src="party.jpg" alt="Party" class="event-img"> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="travel" style="text-align:center;">
+    <h2 style="font-size:2em;">Közlekedés</h2>
+    <p style="margin: 20px 0; font-size: 1.2em;">Nászmise</p>
+    <p style="margin: 10px 0 30px 0; font-size: 1em; color: #555;">Limitált parkolási lehetőség</p>
+    <div style="width:100%;max-width:600px;margin:20px auto;">
+      <iframe
+        width="100%"
+        height="400"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.96418364251!2d19.065919975827875!3d47.49061109598082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc5950fdc34d%3A0x6c09fe8dab02995c!2sJ%C3%A9zus%20Sz%C3%ADve%20Jezsuita%20Templom!5e0!3m2!1shu!2hu!4v1768474359300!5m2!1shu!2hu"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="margin: 40px 0 20px 0; font-size: 1.2em;">Lagzi</p>
+    <div style="width:100%;max-width:600px;margin:20px auto;">
+      <iframe
+        width="100%"
+        height="400"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.113944061967!2d18.910903575824083!3d47.42922150021037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e057da187afb%3A0x4f14c387a68f8f49!2zTXVua8OhY3N5IE1paMOhbHkgTcWxdmVsxZFkw6lzaSBIw6F6!5e0!3m2!1shu!2hu!4v1768474266129!5m2!1shu!2hu"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section id="wedding-party">
+    <h2 style="text-align:center;font-size:2em;">Nászajándék</h2>
+    <p>Amit nekünk szántok, kérjük, egy borítékban a kezünkbe adjátok!
+Ha szeretnétek kicsit feldobni az ajándékot, a menyasszonytáncra szívesen fogadunk pár kaparós sorsjegyet is :)</p>
+  </section>
 </body>
 </html>
