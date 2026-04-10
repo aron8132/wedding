@@ -65,7 +65,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-nav a.active::after,
 nav a:hover::after {
   content: "";
   position: absolute;
@@ -192,7 +191,7 @@ nav, .tagline, p, li, a, button, input, label, section {
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 32px 0;
+  margin: 18px 0;
   position: relative;
 }
 .timeline-event.left .timeline-dot,
@@ -226,13 +225,13 @@ nav, .tagline, p, li, a, button, input, label, section {
 }
 
 .event-content {
-  background: rgba(255,255,255,0.95);
+  background: rgb(254,254,253);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 16px 24px;
-  min-width: 120px;
-  max-width: 220px;
-  margin: 0 24px;
+  padding: 10px 14px;
+  min-width: 140px;
+  max-width: 240px;
+  margin: 0 12px;
   text-align: center;
   z-index: 2;
 }
@@ -247,8 +246,9 @@ nav, .tagline, p, li, a, button, input, label, section {
 }
 .event-img {
   display: block;
-  margin: 10px auto 0 auto;
-  max-width: 80px;
+  margin: 0 auto;
+  max-width: 190px;
+  width: 100%;
   border-radius: 8px;
 }
 
